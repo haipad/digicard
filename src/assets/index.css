@@ -1,0 +1,162 @@
+html {
+  background-color: #23252C;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: larger;
+  font-weight: 800;
+}
+
+#root {
+  width: 550px;
+  height: 100%;
+  margin-top: 5px;
+  background: #1A1B21;
+  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #2C5364, #203A43, #0F2027); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 15px;
+}
+
+/* Image section */
+
+.header {
+  max-width: 100%;
+  height: 180px;
+  display: flex;
+  border-radius: 12px;
+  background-color: #161619;
+  border: 4px groove #2C5364;
+}
+
+.header>img {
+  width: 180px;
+  height: 180px;
+  border-radius: inherit;
+}
+
+.header>.content-title {
+  height: 180px;
+  color: aliceblue;
+  text-align: left;
+  padding-left: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.intro h4,
+.intro h5,
+.intro h6 {
+  /* color: #c31432; */
+  line-height: 10px;
+}
+
+.intro h5,
+.intro h6 {
+  margin-top: -12px;
+  font-weight: 400;
+}
+
+.title-button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.title-button-group button {
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  margin-right: 0px;
+  cursor: pointer;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.title-button-group>.email-button {
+  background-color: #FFFF;
+  color: rgba(26, 27, 33, 1);
+}
+
+.title-button-group>.linkedin-button {
+  background-color: #5093E2;
+  color: white;
+}
+
+.title-button-group>.copy-profile {
+  background-color: burlywood;
+  color:brown;
+}
+
+/* Content section */
+
+.content {
+  margin-left: 10px;
+  color: white;
+  font-family: Verdana, Arial, helvetica;
+  height: 700px;
+  overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #161619;
+  border-radius: 3px;
+}
+
+.content p {
+  font-weight: 200;
+  text-align: justify;
+  word-spacing: 1px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.content-skils ul,
+.work-exp ul,
+.proj ul {
+  line-height: 25px;
+  list-style-position: inside;
+  padding-left: 0px;
+  text-indent: 3px;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.work-exp span {
+  color: burlywood;
+}
+
+.proj a {
+  color: white;
+}
+
+.social {
+  background-color: #161619;
+  padding: 5px 0 5px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.social img {
+  width: 30px;
+  border-radius: 2px;
+  filter: invert(1);
+}
